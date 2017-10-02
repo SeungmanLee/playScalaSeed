@@ -8,10 +8,13 @@ case class Product(ean: Long, name: String, description: String)
 object Product {
   var products = Set( Product(5010255079763L, "AAAA", "11111"),
     Product(5018206244666L, "BBBB", "22222"),
-    Product(5010377823885L, "CCCC", "33333"),
+    Product(5010377823886L, "CCCC", "33333"),
     Product(5014546362534L, "DDDD", "44444"),
-    Product(5018392977237L, "EEEE", "55555")
+    Product(5018392977232L, "EEEE", "55555")
   )
 
   def findAll = products.toList.sortBy(_.ean)
+
+  def findByEan(ean: Long) = products.find(_.ean == ean)
+
 }

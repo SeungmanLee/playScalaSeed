@@ -1,3 +1,9 @@
 # https://www.playframework.com/documentation/latest/ScalaI18N
 
 application.name = Play for scala practice
+
+ean = EAN
+name = 이름
+description = 설명
+
+products.details = 제품: {0}

@@ -17,3 +17,4 @@ libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2
 // play.sbt.routes.RoutesKeys.routesImport += "com.example.binders._"
 
 libraryDependencies += "org.webjars" % "bootstrap" % "3.1.1-2"
+libraryDependencies += "net.sf.barcode4j" % "barcode4j" % "2.1"
