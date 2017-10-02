@@ -2,7 +2,6 @@ package controllers
 
 import play.api.mvc.Action
 import play.mvc.Controller
-import play.mvc._
 import play.api.mvc.Results._
 
 /**

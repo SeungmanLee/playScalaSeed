@@ -7,3 +7,13 @@ name = 이름
 description = 설명
 
 products.details = 제품: {0}
+
+products.form = Product details
+products.list.navigation = Products
+products.new = (new)
+products.new.command = New
+products.new.submit = Add
+products.new.success = Successfully added product {0}
+
+validation.errors = Please correct the errors in th form.
+validation.ean.duplicate = A product with this EAN code already exists
