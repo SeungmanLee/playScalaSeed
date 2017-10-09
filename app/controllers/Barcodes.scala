@@ -1,7 +1,5 @@
 package controllers
 
-import javax.activation.MimeType
-
 import play.api.mvc._
 import play.api.mvc.Results._
 import play.mvc.{Controller}
