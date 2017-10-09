@@ -30,12 +30,17 @@ class Products @Inject() (cc:ControllerComponents)
 
   private val productForm: Form[Product] = Form(
     mapping(
-      "ean" -> longNumber.verifying(
-        "validation.ean.duplicate", Product.findByEan(_).isEmpty),
+      "ean" -> longNumber.verifying("validation.ean.duplicate", eanVerify(_)),
       "name" -> nonEmptyText,
       "description" -> nonEmptyText
       )(Product.apply)(Product.unapply)
   )
+
+  private def eanVerify( ean: Long) = {
+    val ret = Product.findByEan(ean)
+    ret.isEmpty
+  }
+
 
   def save = Action { implicit request =>
     val newProductForm = productForm.bindFromRequest()
